@@ -1,0 +1,39 @@
+<html>
+<head>
+
+  <script>
+
+  function main () {
+
+    var susceptible = 1000;
+    var infected    = 20;
+    var recovered   = 0;
+    
+    var beta  = 0.014; // rate of infection in units of people infected by each infectee
+    var gamma = 0.01; // rate of recovery in units of number of days
+
+    var i = 0;  // day 0
+    while (i < 10) {
+      dSusceptible =    - (beta * susceptible * infected);
+      dInfected    =      (beta * susceptible * infected) - (gamma * infected);
+      dRecovered   =      (gamma * infected);
+      
+      susceptible = susceptible - dSusceptible;
+      infected    = infected    + dInfected
+      recovered   = recovered   + dRecovered
+      
+      document.write(susceptible, ", ", infected, ", ", recovered, "<br>")
+      
+      i = i + 1;
+    }
+
+  }
+
+
+  main();
+  
+  </script>
+
+</head>
+</html>
+
