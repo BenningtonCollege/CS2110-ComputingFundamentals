@@ -17,7 +17,6 @@ void setup() {
   bgImage.resize(600,480);
   
   image(greenImage, 0, 0);
-  
 }
 
 void draw() {
@@ -36,5 +35,17 @@ void draw() {
     }
   }
   
+  color m = get(mouseX, mouseY);
+  fill(255);
+  rect(0, 0, 275, 20);
+  fill(0);
+  text(mouseX + ", " + mouseY + 
+       ": r" + red(m) + " g" + green(m) + " b" + blue(m), 
+       10, 15);
+  
   updatePixels();
 }
+
+
+
+
