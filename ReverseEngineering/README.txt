@@ -1,5 +1,8 @@
 These are intended to serve as examples for you to examine and then design code that would offer the same functionality.
 
+Remember to consult the Processing API often (Google for it).
+
+
 Generally, you should expect that I would prefer more general solutions rather than overfit (specific) solutions. So, 
 
   int w = 10;
