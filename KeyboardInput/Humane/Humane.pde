@@ -22,7 +22,7 @@ void keyPressed() {
     c = new GUIController(this);
 
     // create the textField and move it just off screen
-    t = new IFTextField(str(key), width + 1, height + 1, tWidth);
+    t = new IFTextField("inputArea", width + 1, height + 1, tWidth);
 
     c.add(t);
 
