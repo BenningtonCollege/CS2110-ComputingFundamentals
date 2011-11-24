@@ -2,6 +2,13 @@ These are intended to serve as examples for you to examine and then design code 
 
 Remember to consult the Processing API often (Google for it).
 
+METHOD: Do The Simplest Things That Can Possibly Work (DTSTTCPW)
+
+Step 1: hard code literal values.
+Step 2: Extract literal values to variables.
+
+
+
 
 Generally, you should expect that I would prefer more general solutions rather than overfit (specific) solutions. So, 
 
